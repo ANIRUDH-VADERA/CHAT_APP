@@ -11,7 +11,7 @@ A Chat Application using Socket.io,HTML,CSS,JS,Node
   3. socket.io
   4. nodemon(For automatic updation)
  
- **Getting Stateted**
+ **Getting Started**
   1. After importing the files install node and initialize it using (npm init) in your current directory
   2. install all the required dependencies
   3. use(nodemon server.js) to run your application locally at port 3000.
