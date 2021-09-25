@@ -1,0 +1,178 @@
+/* Variables to be used Colors */
+:root {
+  --primary-blue: #2196f3;
+  --dark-blue: #1976d2;
+  --light-blue: #bbdefb;
+  --white: #ffffff;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --light-gray: #bdbdbd;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: var(--primary-text);
+}
+
+/* Helper Functions */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.mb2 {
+  margin-bottom: 20px;
+}
+
+/* Text Classes */
+.primary-text {
+  color: var(--primary-text);
+}
+
+.secondary-text {
+  color: var(--secondary-text);
+}
+
+.light-text {
+  color: var(--light-blue);
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  height: 150px;
+  background-color: var(--dark-blue);
+  width: 100%;
+  color: white;
+}
+
+header .container {
+  height: 100%;
+  align-items: flex-start;
+}
+
+/* Login Form */
+
+.login {
+  background: white;
+  padding: 40px 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: -100px;
+}
+
+.appcontainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-blue);
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+/* Form elements */
+input {
+  height: 40px;
+  padding: 10px;
+  background: var(--light-blue);
+  border: none;
+  color: var(--secondary-text);
+}
+
+button {
+  height: 40px;
+  padding: 0 15px;
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+}
+
+.main-content {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Chat Section */
+.chat {
+  background: white;
+  margin: 25px 0;
+  padding: 25px;
+  color: white;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.message {
+  background-color: var(--primary-blue);
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.message-right {
+  background-color: var(--light-blue);
+  color: var(--primary-text);
+  margin-left: 20%;
+}
+
+.message-details {
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

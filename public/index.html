@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CHAT APP</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="appcontainer flex-column flex-center">
+      <header>
+        <div class="container flex-column flex-center">
+          <h1>Quick Chat</h1>
+          <p class="light-text">The easiest way to get your messages across</p>
+        </div>
+      </header>
+      <div class="main-content container flex-grow-1 flex-column ">
+        <div class="login">
+          <h2 class="text-center">Get Started</h1>
+          <form action="" class="login-form flex">
+            <input
+              type="text"
+              name="userName"
+              class="userNameInput flex-grow-1"
+              placeholder="userName"
+            />
+            <button class="loginBtn">Chat!!</button>
+          </form>
+        </div>
+        <div class="chat flex-grow-1 flex-column hidden">
+          <div class="message-list flex-grow-1">
+          </div>
+          <form action="" class="messageForm flex ">
+            <input
+              type="text"
+              name="message"
+              placeholder="Enter a message"
+              class="messageInput flex-grow-1"
+            />
+            <button class="sendBtn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js" integrity="sha512-WL6WGKMPBiM9PnHRYIn5YEtq0Z8XP4fkVb4qy7PP4vhmYQErJ/dySyXuFIMDf1eEYCXCrQrMJfkNwKc9gsjTjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js" async defer></script>
+  </body>
+</html>
